@@ -6,3 +6,4 @@ log/
 tmp/
 .ruby-version
 history.yml
+.idea/
