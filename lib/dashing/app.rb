@@ -75,7 +75,7 @@ get '/events', provides: 'text/event-stream' do
   end
 end
 
-get '/boards/:dashboard' do
+get '/:dashboard.board' do
   protected!
   tilt_html_engines.each do |suffix, _|
     file = File.join(settings.views, "#{params[:dashboard]}.#{suffix}")
